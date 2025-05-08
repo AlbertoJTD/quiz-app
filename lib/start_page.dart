@@ -13,10 +13,20 @@ class StartPage extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
+            // Try to avoid this way
+            // Opacity(
+            //   opacity: 0.6,
+            //   child: Image.asset(
+            //     'assets/images/quiz-logo.png',
+            //     width: 200,
+            //     height: 200,
+            //   ),
+            // ),
             Image.asset(
               'assets/images/quiz-logo.png',
               width: 200,
               height: 200,
+              color: const Color.fromARGB(150, 255, 255, 255)
             ),
 
             const SizedBox(height: 50),
