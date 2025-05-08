@@ -19,7 +19,7 @@ class StartPage extends StatelessWidget {
               height: 200,
             ),
 
-            const SizedBox( height: 50),
+            const SizedBox(height: 50),
 
             const Text(
               'Learn Flutter the fun way!',
@@ -29,11 +29,11 @@ class StartPage extends StatelessWidget {
               ),
             ),
 
-            const SizedBox( height: 20),
+            const SizedBox(height: 20),
 
-            TextButton(
+            OutlinedButton(
               onPressed: () {},
-              style: TextButton.styleFrom(
+              style: OutlinedButton.styleFrom(
                 foregroundColor: Colors.white,
                 textStyle: const TextStyle(
                   fontSize: 15,
