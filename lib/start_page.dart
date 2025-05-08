@@ -5,14 +5,10 @@ class StartPage extends StatelessWidget {
 
   @override
   Widget build(context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: const Color.fromARGB(255, 68, 16, 157)
-      ),
-      child: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
+    return Center(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
             // Try to avoid this way
             // Opacity(
             //   opacity: 0.6,
@@ -55,8 +51,7 @@ class StartPage extends StatelessWidget {
               ),
             ),
           ],
-        ),
       ),
-    ); 
+    );
   }
 }
