@@ -31,7 +31,7 @@ class StartPage extends StatelessWidget {
 
             const SizedBox(height: 20),
 
-            OutlinedButton(
+            OutlinedButton.icon(
               onPressed: () {},
               style: OutlinedButton.styleFrom(
                 foregroundColor: Colors.white,
@@ -39,7 +39,10 @@ class StartPage extends StatelessWidget {
                   fontSize: 15,
                 ),
               ),
-              child: const Text('Start Quiz!'),
+              label: const Text('Start Quiz!'),
+              icon: Icon(
+                Icons.arrow_right_alt
+              ),
             ),
           ],
         ),
