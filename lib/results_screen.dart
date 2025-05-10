@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'package:quiz_app/data/questions.dart';
 import 'package:quiz_app/questions_summary.dart';
@@ -44,23 +45,36 @@ class ResultsScreen extends StatelessWidget {
           children: [
             Text(
               'You answered $correctNumberOfQuestions out of $totalNumberOfQuestions questions correctly!',
+              style: GoogleFonts.lato(
+                color: Colors.white,
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+              ),
+              textAlign: TextAlign.center,
             ),
 
-            SizedBox(height: 20),
+            SizedBox(height: 30),
 
             QuestionsSummary(
               summaryData: summaryData
             ),
 
-            SizedBox(height: 20),
+            SizedBox(height: 30),
 
             TextButton.icon(
               onPressed: resetQuiz,
               label: Text(
-                'Restart Quiz'
+                'Restart Quiz',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 18,
+                ),
               ),
               icon: Icon(
-                Icons.refresh_outlined
+                Icons.refresh_outlined,
+                color: Colors.white,
+                size: 18,
+                weight: 300,
               ),
             ),
           ],
