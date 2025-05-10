@@ -36,7 +36,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
             SizedBox(height: 20),
 
             // Spreading values
-            ...currentQuestion.answers.map((answer) {
+            ...currentQuestion.getShuffledAnswers().map((answer) {
               return AwnswerButton(
                 answerText: answer,
                 onTap: () {},
